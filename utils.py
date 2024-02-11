@@ -40,3 +40,14 @@ def is_prime(number):
         if number % i == 0:
             return False
     return True
+
+def is_lucky(number):
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    for j in range(2, int(int(str(num)[::-1]) ** 0.5) + 1):
+        if int(str(num)[::-1]) % j == 0:
+            return False
+    if str(num) == str(num)[::-1]:
+        return False
+    return True
