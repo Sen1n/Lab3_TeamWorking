@@ -50,4 +50,4 @@ def is_lucky(number):
             return False
     if str(num) == str(num)[::-1]:
         return False
-    return True
+    return False
