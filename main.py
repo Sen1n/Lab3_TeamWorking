@@ -1,4 +1,4 @@
-from utils import fac, is_prime
+from utils import fac, is_prime, is_lucky
 
 
 def main():
@@ -7,6 +7,7 @@ def main():
 
 
 print(is_prime(1))
+print(is_lucky(37))
 
 
 if __name__ == "__main__":
