@@ -51,3 +51,9 @@ def is_lucky(number):
     if str(num) == str(num)[::-1]:
         return False
     return False
+
+def nsd(a, b):
+    if b == 0:
+        return a
+    else:
+        return nsd(b, a % b)
